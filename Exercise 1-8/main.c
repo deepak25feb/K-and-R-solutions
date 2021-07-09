@@ -12,8 +12,8 @@ main() {
 
     while ((c = getchar()) != EOF) {
         if (c == '\n') nlc++;
-        if (c == '\t') tc++;
-        if (c == ' ') bc++;
+        else if (c == '\t') tc++;
+        else if (c == ' ') bc++;
     }
     printf("\n");
     printf("\\n : %d\n", nlc);
